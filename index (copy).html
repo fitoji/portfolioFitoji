@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--MEtadatos-->
+        <meta charset="utf-8">
+        <meta name="author" content="Fitus">
+        <meta name="description" content="Portafolio de Desarrollo Web de Fitus">
+        <meta name="description" content="Portfolio Web Development Fitus">
+        <meta name="keywords" content="html, javascript, css, react,w3, ntf,">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Titulo-->
+        <title>Fitus | Desarrollo Web</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!--Iconos Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Barra de navegacions-->
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <!--bg-body-tertiary-->
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="img/favicon.png" width="50" alt="logo de la pagina web">
+                </a> 
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonios">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav>
+    <!--Hero-->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="imagen-desarrollador" src="/img/foto_perfil.jpeg" alt="foto perfil">
+            <h1>Hola!, soy Fitus</h1>
+            <h2>Desarrollo Paginas Web</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-imagen img-fluid" src="/img/laptop.jpeg" alt="monitor, laptop">
+
+        </div>
+    </section>
+    
+    <!--Sobre mi-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce a Fitus</h2>
+            <p class="seccion-texto">
+                ¡Hola! Soy Fitus, un apasionado del desarrollo web. Mi enfoque es convertir ideas en sitios web funcionales y atractivos. Desde planificación y diseño hasta implementación, me esfuerzo por superar expectativas. Creatividad, innovación y atención personal son mis pilares. ¡Trabajemos juntos para llevar tu visión al mundo digital!
+            </p>
+        </div>
+    </section>
+
+    <!--Experiencia-->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--desarrollo web-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Desarrollo Web</p>     
+                    <p>En el vertiginoso mundo actual, el desarrollo web es la clave para materializar ideas en línea. Desde aplicaciones interactivas hasta sitios intuitivos, la web se transforma constantemente. Lenguajes como HTML, CSS, JavaScript y herramientas como frameworks y CMS son la base. La adaptación móvil y la experiencia del usuario son prioritarias. El desarrollo web trasciende la pantalla, es la puerta al futuro digital.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JavaScript</span>
+                        <span class="badge text-bg-primary">React</span>
+                    </div>
+                </div>
+                <!--W3-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-bar-chart"></i>
+                    <p class="experiencia-titulo">Web3</p>     
+                    <p>Web 3.0 promete una web más inteligente, conectada y significativa, donde la información fluye de manera más fluida y las experiencias digitales se adaptan mejor a las necesidades individuales. Con el continuo avance tecnológico, la Web 3.0 se perfila como una etapa emocionante en la evolución de Internet</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Solidity</span>
+                        <span class="badge text-bg-primary">Forge</span>                    
+                    </div>
+                </div>
+                <!--NFTS-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-bag"></i>
+                    <p class="experiencia-titulo">NFT's</p>     
+                    <p>Activos digitales únicos respaldados por tecnología blockchain, que permiten la propiedad verificable y el intercambio de obras de arte, coleccionables y contenido digital. </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Minteo</span>
+                        <span class="badge text-bg-primary">Creacion</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--Proyectos-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto negro">Mis Proyectos</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
+
+        <!--galeria de proyectos-->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!--proyecto -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p01.jpeg" alt="proyecto 01">
+                        <div class="overlay">
+                            <p>Proyecto nº1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--proyecto 2-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p02.png" alt="proyecto 02">
+                        <div class="overlay">
+                            <p>Proyecto nº2</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--proyecto 3-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p03.png" alt="proyecto 03">
+                        <div class="overlay">
+                            <p>Proyecto nº1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--proyecto 4-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p04.png" alt="proyecto 04">
+                        <div class="overlay">
+                            <p>Proyecto nº4</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--proyecto 5-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p05.jpeg" alt="proyecto 05">
+                        <div class="overlay">
+                            <p>Proyecto nº1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--proyecto 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="/img/p06.jpeg" alt="proyecto 06">
+                        <div class="overlay">
+                            <p>Proyecto nº6</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-browser-chrome"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <a href="" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-dark">Ver mas Proyectos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+        
+    </section>
+    
+    <!--aRTICULO-->
+    <section id="articulos" class="articulos justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Articulos</h2>
+        <div class="card">
+            <div class="card-header">
+              Mas Recientes
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">lorer  jjerj</li>      
+                </a>
+                <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">articulo variois</li>      
+                </a>
+                <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">lara lara</li>      
+                </a>
+            </ul>
+        </div>
+        <a href="" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-dark">Ver más artículos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+
+    <!--Testimonios-->
+    
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+
+        <!--Carrusel-->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <img class="testimonio-imagen rounded-circle" src="/img/testi01.png" alt="testimonio 01">
+                    <p class="testimonio-texto">Estoy maravillado con el trabajo de Fitus en mi sitio web. Capturó perfectamente mi visión y la transformó en una plataforma en línea funcional y atractiva. Su enfoque creativo y habilidades técnicas superaron mis expectativas. ¡Gracias, Fitus, por hacer que mi presencia en línea cobre vida de manera excepcional!</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Ejemplo</p>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img class="testimonio-imagen rounded-circle" src="/img/p05.jpeg" alt="testimonio 01">
+                    <p class="testimonio-texto">Estoy maravillado con el trabajo de Fitus en mi sitio web. Capturó perfectamente mi visión y la transformó en una plataforma en línea funcional y atractiva. Su enfoque creativo y habilidades técnicas superaron mis expectativas. ¡Gracias, Fitus, por hacer que mi presencia en línea cobre vida de manera excepcional!</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Ejemplo</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img class="testimonio-imagen rounded-circle" src="/img/p02.png" alt="testimonio 01">
+                    <p class="testimonio-texto">Estoy maravillado con el trabajo de Fitus en mi sitio web. Capturó perfectamente mi visión y la transformó en una plataforma en línea funcional y atractiva. Su enfoque creativo y habilidades técnicas superaron mis expectativas. ¡Gracias, Fitus, por hacer que mi presencia en línea cobre vida de manera excepcional!</p>
+                    <div class="testimonio-info">
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Ejemplo</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+    </section>
+
+    <!--contacto-->
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Escribeme!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Contactame para que veamos como podemos empezar tu proyecto web
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:example@yahoo.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+
+                            </button>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="img/favicon.png" alt="logo">
+        <p class="footer-texto text-center">Aprendo y creo todos los días. <br> Creemos un proyecto juntos</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.facebook.com/fitus.giusti/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="mailto:@micorreo.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-at"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Fitus (2023) &#169;</div>
+        <div>Iconos de Freepik.es 
+            <a href="https://www.freepik.es/icono/codificacion_1006261">Icono de prettycons</a>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
+
