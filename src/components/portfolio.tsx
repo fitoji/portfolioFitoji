@@ -30,7 +30,7 @@ export default function Portfolio() {
                 <div className="container mx-auto px-4 py-3">
                     <div className="flex items-center justify-between">
                         <motion.img
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-VZRNqIfaH2KaebZ8EmyGo1JgMgaLA8.png"
+                            src="foto_perfil.webp"
                             alt="Logo"
                             className="w-12 h-12"
                             whileHover={{ scale: 1.1 }}
@@ -76,9 +76,9 @@ export default function Portfolio() {
             <motion.section id="inicio" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="pt-32 pb-16 px-4 scroll-mt-20">
                 <div className="container mx-auto text-center">
                     <motion.img
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/foto_perfil-iR3cb6cYwcbZ2I83l8ziXctPA25wGl.jpeg"
+                        src="foto_perfil.webp"
                         alt="Profile"
-                        className="w-32 h-32 rounded-full border-4 border-violet-500 mx-auto mb-8 object-cover"
+                        className="w-32 h-32 rounded-full border-4 border-violet-500 mx-auto mb-8 object-cover hover:border-violet-700"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                     />
                     <motion.h1
@@ -125,7 +125,7 @@ export default function Portfolio() {
                         Desarrollo Páginas Web
                     </motion.h2>
                     <motion.img
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/laptop-cjDAAIzGqo5otLGYXVlEaZ3Cqhbamk.jpeg"
+                        src="laptop.webp"
                         alt="Laptop"
                         className="w-full max-w-3xl mx-auto rounded-xl shadow-2xl"
                         initial={{ scale: 0.8 }}
