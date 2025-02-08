@@ -253,7 +253,9 @@ export default function Portfolio() {
                             </motion.a>
                         ))}
                     </div>
-                    <p className="text-sm text-gray-500">Creado por Fitus (2023) &#169;</p>
+                    <p className="text-sm text-gray-500">
+                        Creado por Fitus <strong>Estudio Aneka</strong> ({new Date().getFullYear()}) &#169;
+                    </p>
                 </div>
             </footer>
         </div>
