@@ -1,186 +1,498 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!--MEtadatos-->
-        <meta charset="utf-8">
-        <meta name="author" content="Fitus">
-        <meta name="description" content="Portafolio de Desarrollo Web de Fitus">
-        <meta name="description" content="Portfolio Web Development Fitus">
-        <meta name="keywords" content="html, javascript, css, react,w3, ntf,">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Titulo-->
-        <title>Fitus | Desarrollo Web</title>
-        <!--Favicon-->
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-        <!--bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!--Iconos Bootstrap-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <!--CSS-->
-        <link rel="stylesheet" href="style.css">
-        <!--fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <!--Barra de navegacions-->
-        <nav class="navbar navbar-expand-md navbar-light ">
-            <!--bg-body-tertiary-->
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="#">
-                    <img src="img/favicon.png" width="50" alt="logo de la pagina web">
-                </a> 
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Desarrollo Web de Fitoji">
+  <meta name="keywords" content="html, javascript, css, web3, nft">
+  <title>Fitoji | Desarrollo Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
 
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Proyectos</a>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-                </ul>
-                
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">Aneka Studio</a>
+        <nav class="nav-desktop">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li class="nav-item"><a href="#experiencia" class="nav-link">Experiencia</a></li>
+            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile">
+      <ul class="nav-list-mobile">
+        <li class="nav-item-mobile"><a href="#sobre-mi" class="nav-link-mobile">Sobre mí</a></li>
+        <li class="nav-item-mobile"><a href="#experiencia" class="nav-link-mobile">Experiencia</a></li>
+        <li class="nav-item-mobile"><a href="#proyectos" class="nav-link-mobile">Proyectos</a></li>
+        <li class="nav-item-mobile"><a href="#contacto" class="nav-link-mobile">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="subtitle reveal-text">¡Hola! 👋</h2>
+          <h1 class="title reveal-text">Soy <span class="highlight">Fitoji</span></h1>
+          <p class="description reveal-text">Desarrollo Páginas Web Modernas</p>
+          <p class="sub-description reveal-text">Especialista en crear experiencias digitales únicas y funcionales para
+            convertir ideas en realidad.</p>
+          <div class="button-group reveal-item">
+            <a href="#contacto" class="button button-primary">Contactar</a>
+            <a href="#proyectos" class="button button-outline">Ver proyectos</a>
+          </div>
+          <div class="social-links reveal-item">
+            <a href="https://github.com/fitoji" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                </path>
+              </svg>
+            </a>
+            <!-- <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a> -->
+            <a href="mailto:fitoji@protonmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="hero-image">
+          <div class="image-glow"></div>
+          <div class="image-container">
+            <img src="https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg" alt="Fitoji - Web Developer">
+            <div class="image-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="sobre-mi">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Conoce a <span class="highlight">Fitoji</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image reveal-slide-right">
+          <div class="image-frame">
+            <img src="img/laptop.jpeg" alt="Fitoji - Web Developer">
+            <div class="image-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 16a4 4 0 0 1-.88-7.903A5 5 0 1 1 15.9 6L16 6a5 5 0 0 1 1 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-slide-left">
+          <p>¡Hola! Soy Fitoji, un apasionado del desarrollo web con experiencia en la creación de sitios web modernos y
+            aplicaciones web dinámicas.</p>
+          <p>Mi enfoque es convertir ideas en sitios web funcionales y atractivos que no solo se vean bien, sino que
+            también ofrezcan una experiencia de usuario excepcional.</p>
+          <p>Desde la planificación y diseño hasta la implementación, me esfuerzo por superar las expectativas en cada
+            proyecto. La creatividad, innovación y atención personal son mis pilares fundamentales al trabajar con cada
+            cliente.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Web3</span>
+            <span class="skill-tag">Solidity</span>
+            <span class="skill-tag">NFTs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience section" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mi <span class="highlight">Experiencia</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-container">
+        <div class="card reveal-scale">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Desarrollo Web</h3>
+          <p class="card-description">Creación de sitios web modernos, responsivos y funcionales utilizando las últimas
+            tecnologías y frameworks.</p>
+          <div class="card-tags">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">React</span>
+          </div>
+        </div>
+        <div class="card reveal-scale" data-delay="100">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Web3</h3>
+          <p class="card-description">Desarrollo de aplicaciones descentralizadas en la blockchain, contratos
+            inteligentes y experiencias Web3.</p>
+          <div class="card-tags">
+            <span class="card-tag">Solidity</span>
+            <span class="card-tag">Forge</span>
+            <span class="card-tag">Smart Contracts</span>
+          </div>
+        </div>
+        <div class="card reveal-scale" data-delay="200">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.91 8.84 8.56 2.23a1.93 1.93 0 0 0-1.81 0L3.1 4.13a2.12 2.12 0 0 0-.05 3.69l12.22 6.93a2 2 0 0 0 1.94 0L21 12.51a2.12 2.12 0 0 0-.09-3.67Z">
+              </path>
+              <path
+                d="m3.09 8.84 12.35-6.61a1.93 1.93 0 0 1 1.81 0l3.65 1.9a2.12 2.12 0 0 1 .1 3.69L8.73 14.75a2 2 0 0 1-1.94 0L3 12.51a2.12 2.12 0 0 1 .09-3.67Z">
+              </path>
+              <line x1="12" y1="22" x2="12" y2="13"></line>
+              <path
+                d="M20 13.5v3.37a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13.5">
+              </path>
+            </svg>
+          </div>
+          <h3 class="card-title">NFT's</h3>
+          <p class="card-description">Creación, minteo y gestión de NFTs y coleccionables digitales en diferentes
+            blockchains.</p>
+          <div class="card-tags">
+            <span class="card-tag">Minteo</span>
+            <span class="card-tag">Creación</span>
+            <span class="card-tag">Colecciones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal-item">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Proyecto eCommerce">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
               </div>
             </div>
-        </nav>
-    <!--Hero-->
-    <section class="hero align-items-stretch">
-        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-            <img class="imagen-desarrollador" src="/img/foto_perfil.jpeg" alt="foto perfil">
-            <h1>Hola!, soy Fitus</h1>
-            <h2>Desarrollo Paginas Web</h2>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Tienda eCommerce</h3>
+            <p class="project-description">Tienda en línea con carrito de compras, procesamiento de pagos y panel de
+              administración.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-inferior">
-            <img class="hero-inferior-imagen img-fluid" src="/img/laptop.jpeg" alt="monitor, laptop">
-
-        </div>
-    </section>
-    
-    <!--Sobre mi-->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Conoce a Fitus</h2>
-            <p class="seccion-texto">
-                ¡Hola! Soy Fitus, un apasionado del desarrollo web. Mi enfoque es convertir ideas en sitios web funcionales y atractivos. Desde planificación y diseño hasta implementación, me esfuerzo por superar expectativas. Creatividad, innovación y atención personal son mis pilares. ¡Trabajemos juntos para llevar tu visión al mundo digital!
+        <div class="project-card reveal-item" data-delay="100">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg"
+              alt="NFT Marketplace">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">NFT Marketplace</h3>
+            <p class="project-description">Plataforma para comprar, vender y crear NFTs con cartera digital integrada.
             </p>
-        </div>
-    </section>
-
-    <!--Experiencia-->
-    <section id="experiencia" class="experiencia seccion-clara">
-        <div class="container text-center">
-            <div class="row">
-                <!--desarrollo web-->
-                <div class="columna col-12 col-md-4">
-                    <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Desarrollo Web</p>     
-                    <p>En el vertiginoso mundo actual, el desarrollo web es la clave para materializar ideas en línea. Desde aplicaciones interactivas hasta sitios intuitivos, la web se transforma constantemente. Lenguajes como HTML, CSS, JavaScript y herramientas como frameworks y CMS son la base. La adaptación móvil y la experiencia del usuario son prioritarias. El desarrollo web trasciende la pantalla, es la puerta al futuro digital.</p>
-                    <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">HTML</span>
-                        <span class="badge text-bg-primary">CSS</span>
-                        <span class="badge text-bg-primary">JavaScript</span>
-                        <span class="badge text-bg-primary">React</span>
-                    </div>
-                </div>
-                <!--W3-->
-                <div class="columna col-12 col-md-4">
-                    <i class="bi bi-bar-chart"></i>
-                    <p class="experiencia-titulo">Web3</p>     
-                    <p>Web 3.0 promete una web más inteligente, conectada y significativa, donde la información fluye de manera más fluida y las experiencias digitales se adaptan mejor a las necesidades individuales. Con el continuo avance tecnológico, la Web 3.0 se perfila como una etapa emocionante en la evolución de Internet</p>
-                    <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">Solidity</span>
-                        <span class="badge text-bg-primary">Forge</span>                    
-                    </div>
-                </div>
-                <!--NFTS-->
-                <div class="columna col-12 col-md-4">
-                    <i class="bi bi-bag"></i>
-                    <p class="experiencia-titulo">NFT's</p>     
-                    <p>Activos digitales únicos respaldados por tecnología blockchain, que permiten la propiedad verificable y el intercambio de obras de arte, coleccionables y contenido digital. </p>
-                    <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">Minteo</span>
-                        <span class="badge text-bg-primary">Creacion</span>
-                        
-                    </div>
-                </div>
-
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Solidity</span>
+              <span class="project-tag">Web3</span>
             </div>
-
+          </div>
         </div>
-    </section>
-    <!--Proyectos-->
-    
-    
-    <!--aRTICULO-->
-    
-    <!--Testimonios-->
-    
-    <!--contacto-->
-    <section id="contacto" class="contacto seccion-oscura">
-        <div class="container">
-            <div class="container text-center rectangulo d-flex justify-content-evenly">
-                <div class="row">
-                    <div class="col-12 col-md-4 seccion-titulo">
-                        Escribeme!
-                    </div>
-                    <div class="col-12 col-md-4 descripcion">
-                        Contactame para que veamos como podemos empezar tu proyecto web
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <a href="mailto:fitoji@gmail.com">
-                            <button type="button">
-                                Contacto
-                                <i class="bi bi-envelope-check-fill"></i>
-
-                            </button>
-
-                        </a>
-                    </div>
-                </div>
-
+        <div class="project-card reveal-item" data-delay="200">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg" alt="App Móvil">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
             </div>
-
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">App de Gestión</h3>
+            <p class="project-description">Aplicación web para gestión de proyectos y tareas con análisis en tiempo
+              real.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-
-    </section>
-
-    <!--Pie de pagina-->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-        <img class="footer-logo" src="img/favicon.png" alt="logo">
-        <p class="footer-texto text-center">Aprendo y creo todos los días. <br> Creemos un proyecto juntos</p>
-        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-            <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.facebook.com/fitus.giusti/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="mailto:fitoji@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-envelope-at"></i>
-            </a>
+  <!-- Contact Section -->
+  <section class="contact section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ponte en <span class="highlight">Contacto</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info reveal-slide-right">
+          <h3>¿Tienes un proyecto en mente?</h3>
+          <p>Estoy disponible para trabajar en proyectos interesantes y ayudarte a hacer realidad tus ideas digitales.
+          </p>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <span>fitoji@protonmail.com</span>
+          </div>
+          <!-- <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <span>+34 123 456 789</span>
+          </div> -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <span>Barcelona, España</span>
+          </div>
         </div>
-        <div class="derechos-de-autor">Creado por Fitus (2023) &#169;</div>
-        <div>Iconos de Freepik.es 
-            <a href="https://www.freepik.es/icono/codificacion_1006261">Icono de prettycons</a>
+        <form class="contact-form reveal-slide-left">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">
+            Enviar Mensaje
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="shape shape-5"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Fitoji</div>
+        <div class="footer-social">
+          <a href="https://github.com/fitoji" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/pisoliso10" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+              </path>
+            </svg>
+          </a>
+          <!-- <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a> -->
+          <a href="mailto:fitoji@protonmail.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
         </div>
-    </footer>
-    
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-text">Aprendo y creo todos los días. Creemos un proyecto juntos.</p>
+        <p class="footer-copyright">© 2025 Fitoji | Aneka Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="main.js"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    </body>
 </html>
-
