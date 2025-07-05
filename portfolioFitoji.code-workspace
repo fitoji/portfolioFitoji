@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "portfolioFitoji",
+			"path": "."
+		},
+		{
+			"name": "js",
+			"path": "../portfolio-bolt/project/js"
+		},
+		{
+			"name": "css",
+			"path": "../portfolio-bolt/project/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolioFitoji"
+	}
+}
