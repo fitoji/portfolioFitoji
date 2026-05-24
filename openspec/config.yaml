@@ -1,0 +1,50 @@
+# openspec/config.yaml
+schema: spec-driven
+
+context: |
+  Tech stack: Vanilla HTML/CSS/JS (static site)
+  Architecture: Single-page portfolio, no frameworks, no build tools
+  Testing: None available (no package manager, no test runner)
+  Style: Vanilla CSS with custom properties, light/dark theme, scroll-reveal animations
+  Language: Spanish (content), English (code identifiers)
+  Deployment: GitHub Pages (CNAME: fitoji.dev.ar)
+
+strict_tdd: false
+
+testing:
+  available: false
+  runner: null
+  reason: "No package manager, build tool, or test framework detected. Static HTML/CSS/JS site with no testing infrastructure."
+  unit: false
+  integration: false
+  e2e: false
+  coverage: false
+  linter: null
+  type_checker: null
+  formatter: null
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    - Follow existing code patterns (vanilla HTML/CSS/JS, no build tools)
+    - Keep existing file structure (index.html, main.js, style.css)
+    - Respect multi-root workspace — do not touch js/ or css/ (belong to portfolio-bolt)
+    - Preserve Spanish content
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas

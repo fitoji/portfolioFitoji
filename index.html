@@ -4,21 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Desarrollo Web de Fitoji">
+  <meta name="description" content="Portafolio de Fitoji — desarrollador web frontend especializado en crear experiencias digitales modernas con HTML, CSS, JavaScript, React y Next.js.">
   <meta name="keywords" content="html, javascript, css, web3, nft">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <title>Fitoji | Desarrollo Web</title>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fitoji.dev.ar/">
+  <meta property="og:title" content="Fitoji | Desarrollo Web">
+  <meta property="og:description" content="Portafolio de Fitoji — desarrollador web frontend especializado en crear experiencias digitales modernas con HTML, CSS, JavaScript, React y Next.js.">
+  <meta property="og:image" content="https://fitoji.dev.ar/img/foto_perfil.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fitoji.dev.ar/">
+  <meta name="twitter:title" content="Fitoji | Desarrollo Web">
+  <meta name="twitter:description" content="Portafolio de Fitoji — desarrollador web frontend especializado en crear experiencias digitales modernas con HTML, CSS, JavaScript, React y Next.js.">
+  <meta name="twitter:image" content="https://fitoji.dev.ar/img/foto_perfil.webp">
+  <link rel="canonical" href="https://fitoji.dev.ar/">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Fitoji",
+        "url": "https://fitoji.dev.ar/",
+        "image": "https://fitoji.dev.ar/img/foto_perfil.webp",
+        "jobTitle": "Desarrollador Web",
+        "sameAs": [
+          "https://github.com/fitoji",
+          "https://twitter.com/pisoliso10"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Fitoji | Desarrollo Web",
+        "url": "https://fitoji.dev.ar/"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
-
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -60,7 +98,6 @@
     <nav class="nav-mobile">
       <ul class="nav-list-mobile">
         <li class="nav-item-mobile"><a href="#sobre-mi" class="nav-link-mobile">Sobre mí</a></li>
-        <li class="nav-item-mobile"><a href="#experiencia" class="nav-link-mobile">Experiencia</a></li>
         <li class="nav-item-mobile"><a href="#proyectos" class="nav-link-mobile">Proyectos</a></li>
         <li class="nav-item-mobile"><a href="#contacto" class="nav-link-mobile">Contacto</a></li>
       </ul>
@@ -111,7 +148,7 @@
         <div class="hero-image">
           <div class="image-glow"></div>
           <div class="image-container">
-            <img class="" src="/img/foto_perfil.webp" alt="Fitoji - Web Developer">
+            <img class="" src="/img/foto_perfil.webp" alt="Fitoji - Web Developer" width="1024" height="1024">
             <!-- <div class="image-badge">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -139,7 +176,7 @@
       <div class="about-content">
         <div class="about-image reveal-slide-right">
           <div class="image-frame">
-            <img class="image-container" src="img/laptop.webp" alt="Fitoji - Web Developer">
+            <img class="image-container" src="img/laptop.webp" alt="Laptop con código de desarrollo web" width="1024" height="1024" loading="lazy">
             <!-- <div class="image-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -172,79 +209,6 @@
     <div class="shape shape-4"></div>
   </section>
 
-  <!-- Experience Section -->
-  <!-- <section class="experience section" id="experiencia">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Mi <span class="highlight">Experiencia</span></h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="cards-container">
-        <div class="card reveal-scale">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
-          </div>
-          <h3 class="card-title">Desarrollo Web</h3>
-          <p class="card-description">Creación de sitios web modernos, responsivos y funcionales utilizando las últimas
-            tecnologías y frameworks.</p>
-          <div class="card-tags">
-            <span class="card-tag">HTML</span>
-            <span class="card-tag">CSS</span>
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">React</span>
-          </div>
-        </div>
-        <div class="card reveal-scale" data-delay="100">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="20" x2="12" y2="10"></line>
-              <line x1="18" y1="20" x2="18" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="16"></line>
-            </svg>
-          </div>
-          <h3 class="card-title">Web3</h3>
-          <p class="card-description">Desarrollo de aplicaciones descentralizadas en la blockchain, contratos
-            inteligentes y experiencias Web3.</p>
-          <div class="card-tags">
-            <span class="card-tag">Solidity</span>
-            <span class="card-tag">Forge</span>
-            <span class="card-tag">Smart Contracts</span>
-          </div>
-        </div>
-        <div class="card reveal-scale" data-delay="200">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M20.91 8.84 8.56 2.23a1.93 1.93 0 0 0-1.81 0L3.1 4.13a2.12 2.12 0 0 0-.05 3.69l12.22 6.93a2 2 0 0 0 1.94 0L21 12.51a2.12 2.12 0 0 0-.09-3.67Z">
-              </path>
-              <path
-                d="m3.09 8.84 12.35-6.61a1.93 1.93 0 0 1 1.81 0l3.65 1.9a2.12 2.12 0 0 1 .1 3.69L8.73 14.75a2 2 0 0 1-1.94 0L3 12.51a2.12 2.12 0 0 1 .09-3.67Z">
-              </path>
-              <line x1="12" y1="22" x2="12" y2="13"></line>
-              <path
-                d="M20 13.5v3.37a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13.5">
-              </path>
-            </svg>
-          </div>
-          <h3 class="card-title">NFT's</h3>
-          <p class="card-description">Creación, minteo y gestión de NFTs y coleccionables digitales en diferentes
-            blockchains.</p>
-          <div class="card-tags">
-            <span class="card-tag">Minteo</span>
-            <span class="card-tag">Creación</span>
-            <span class="card-tag">Colecciones</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- Projects Section -->
   <section class="projects section" id="proyectos">
@@ -257,7 +221,7 @@
         <div class="project-card reveal-item">
           <div class="project-image">
             <img src="https://utfs.io/f/OrgeCo8Gum6eOI3SlR8Gum6eAMoI4TlVFJpSUXKsni259L18" target="_blank"
-              alt="Proyecto Visor Json-Test">
+              alt="Proyecto Visor Json-Test" loading="lazy">
             <div class="project-overlay">
               <div class="project-links">
                 <a href="https://visortests-gpt.vercel.app/" class="project-link">
@@ -268,14 +232,7 @@
                     <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
                 </a>
-                <!-- <a href="#" class="project-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg>
-                </a> -->
+          
               </div>
             </div>
           </div>
@@ -284,8 +241,7 @@
             <p class="project-description">Una aplicación para poder cargar cuestionarios en formato JSON hechos con IA.
               y poder practicar.</p>
             <div class="project-tags">
-              <!-- <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span> -->
+            
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">React</span>
             </div>
@@ -293,7 +249,7 @@
         </div>
         <div class="project-card reveal-item" data-delay="100">
           <div class="project-image">
-            <img src="./img/pic_aneka.png" alt="proyecto aneka garrapi">
+            <img src="./img/pic_aneka.png" alt="Página tienda Garrapiñadas Aneka" width="1920" height="1440" loading="lazy">
             <div class="project-overlay">
               <div class="project-links">
                 <a href="https://anekagarrapi.netlify.app/" class="project-link">
@@ -304,14 +260,7 @@
                     <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
                 </a>
-                <!-- <a href="https://visortests-gpt.vercel.app/" class="project-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg>
-                </a> -->
+              
               </div>
             </div>
           </div>
@@ -328,7 +277,7 @@
         </div>
         <div class="project-card reveal-item" data-delay="200">
           <div class="project-image">
-            <img src="./img/pic_form.png" alt="proyecto formularios de dietica">
+            <img src="./img/pic_form.png" alt="Formularios de dietética y calculadora de calorías" width="1920" height="1440" loading="lazy">
             <div class="project-overlay">
               <div class="project-links">
                 <a href="https://calorias-calc.vercel.app/" class="project-link">
@@ -339,14 +288,7 @@
                     <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
                 </a>
-                <!-- <a href="https://calorias-calc.vercel.app/" class="project-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg>
-                </a> -->
+      
               </div>
             </div>
           </div>
@@ -389,17 +331,7 @@
             </div>
             <span>fitoji@protonmail.com</span>
           </div>
-          <!-- <div class="contact-item">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                </path>
-              </svg>
-            </div>
-            <span>+34 123 456 789</span>
-          </div> -->
+     
           <div class="contact-item">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -411,32 +343,7 @@
             <span>Barcelona, España</span>
           </div>
         </div>
-        <!-- <form class="contact-form reveal-slide-left">
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Tu email" required>
-          </div>
-          <div class="form-group">
-            <label for="subject">Asunto</label>
-            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="button button-primary">
-            Enviar Mensaje
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-          </button>
-        </form> -->
+      
       </div>
     </div>
     <div class="shape shape-5"></div>
@@ -464,14 +371,7 @@
               </path>
             </svg>
           </a>
-          <!-- <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a> -->
+        
           <a href="mailto:fitoji@protonmail.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
