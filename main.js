@@ -78,53 +78,83 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger reveal on initial load
     revealElements();
 
-    // Typewriter effect for .typewriter elements
+    // Typewriter effect — types title then description
     function initTypewriter() {
-        const el = document.querySelector('.typewriter');
-        if (!el) return;
+        const titleEl = document.querySelector('.typewriter');
+        const descEl = document.querySelector('.description');
+        if (!titleEl) return;
 
-        const prefix = 'Soy ';
-        const highlightWord = 'Fitoji';
+        // Hide description until its turn; title hidden via CSS
+        if (descEl) descEl.style.visibility = 'hidden';
+
         const speed = 100;
+        const titlePrefix = 'Soy ';
+        const highlightWord = 'Fitoji';
+        const descText = 'Desarrollo Páginas Web Modernas';
 
         // Respect reduced motion — show full text immediately
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            el.style.visibility = 'visible';
+            titleEl.style.visibility = 'visible';
+            if (descEl) descEl.style.visibility = 'visible';
             return;
         }
 
-        el.innerHTML = '';
-        el.style.visibility = 'visible';
+        // --- Phase 1: type the title ---
+        titleEl.innerHTML = '';
+        titleEl.style.visibility = 'visible';
 
         const cursor = document.createElement('span');
         cursor.className = 'cursor';
         cursor.textContent = '|';
 
         let charIndex = 0;
-        const totalChars = prefix.length + highlightWord.length;
+        const titleChars = titlePrefix.length + highlightWord.length;
 
-        function type() {
-            if (charIndex < prefix.length) {
-                el.textContent = prefix.slice(0, charIndex + 1);
-            } else if (charIndex === prefix.length) {
-                el.textContent = prefix;
+        function typeTitle() {
+            if (charIndex < titlePrefix.length) {
+                titleEl.textContent = titlePrefix.slice(0, charIndex + 1);
+            } else if (charIndex === titlePrefix.length) {
+                titleEl.textContent = titlePrefix;
                 const span = document.createElement('span');
                 span.className = 'highlight';
-                el.appendChild(span);
-                el.appendChild(cursor);
+                titleEl.appendChild(span);
+                titleEl.appendChild(cursor);
             } else {
-                const span = el.querySelector('.highlight');
-                span.textContent = highlightWord.slice(0, charIndex - prefix.length + 1);
+                const span = titleEl.querySelector('.highlight');
+                span.textContent = highlightWord.slice(0, charIndex - titlePrefix.length + 1);
             }
 
             charIndex++;
 
-            if (charIndex <= totalChars) {
-                setTimeout(type, speed);
+            if (charIndex <= titleChars) {
+                setTimeout(typeTitle, speed);
+            } else {
+                // Title done — move to description after a pause
+                setTimeout(typeDescription, 600);
             }
         }
 
-        setTimeout(type, 600);
+        // --- Phase 2: type the description ---
+        function typeDescription() {
+            if (!descEl) return;
+            descEl.textContent = '';
+            descEl.style.visibility = 'visible';
+            descEl.classList.remove('reveal-item');
+
+            let idx = 0;
+
+            function type() {
+                descEl.textContent = descText.slice(0, idx + 1);
+                idx++;
+                if (idx < descText.length) {
+                    setTimeout(type, speed);
+                }
+            }
+
+            type();
+        }
+
+        setTimeout(typeTitle, 600);
     }
 
     initTypewriter();
