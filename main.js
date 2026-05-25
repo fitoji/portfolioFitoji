@@ -137,14 +137,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- Phase 2: type the description ---
         function typeDescription() {
             if (!descEl) return;
-            descEl.textContent = '';
+
+            // Remove cursor from title
+            const titleCursor = titleEl.querySelector('.cursor');
+            if (titleCursor) titleCursor.remove();
+
+            descEl.innerHTML = '';
             descEl.style.visibility = 'visible';
             descEl.classList.remove('reveal-item');
 
             let idx = 0;
 
             function type() {
-                descEl.textContent = descText.slice(0, idx + 1);
+                descEl.innerHTML = descText.slice(0, idx + 1) + '<span class="cursor">|</span>';
                 idx++;
                 if (idx < descText.length) {
                     setTimeout(type, speed);
