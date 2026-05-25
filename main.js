@@ -78,6 +78,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger reveal on initial load
     revealElements();
 
+    // Typewriter effect for .typewriter elements
+    function initTypewriter() {
+        const el = document.querySelector('.typewriter');
+        if (!el) return;
+
+        const prefix = 'Soy ';
+        const highlightWord = 'Fitoji';
+        const speed = 100;
+
+        // Respect reduced motion — show full text immediately
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            el.style.visibility = 'visible';
+            return;
+        }
+
+        el.innerHTML = '';
+        el.style.visibility = 'visible';
+
+        const cursor = document.createElement('span');
+        cursor.className = 'cursor';
+        cursor.textContent = '|';
+
+        let charIndex = 0;
+        const totalChars = prefix.length + highlightWord.length;
+
+        function type() {
+            if (charIndex < prefix.length) {
+                el.textContent = prefix.slice(0, charIndex + 1);
+            } else if (charIndex === prefix.length) {
+                el.textContent = prefix;
+                const span = document.createElement('span');
+                span.className = 'highlight';
+                el.appendChild(span);
+                el.appendChild(cursor);
+            } else {
+                const span = el.querySelector('.highlight');
+                span.textContent = highlightWord.slice(0, charIndex - prefix.length + 1);
+            }
+
+            charIndex++;
+
+            if (charIndex <= totalChars) {
+                setTimeout(type, speed);
+            }
+        }
+
+        setTimeout(type, 600);
+    }
+
+    initTypewriter();
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
