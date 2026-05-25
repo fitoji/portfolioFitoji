@@ -343,7 +343,7 @@ textarea:focus-visible {
   --grid-color: var(--color-primary-300);
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 80px 0 0 0;
   background-image:
     linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
