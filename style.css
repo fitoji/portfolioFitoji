@@ -340,20 +340,22 @@ textarea:focus-visible {
 
 /* Grid pattern overlay */
 .hero::before {
+  --grid-color: var(--color-primary-300);
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to right, var(--color-primary-400) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-primary-400) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   background-size: 60px 60px;
-  opacity: 0.04;
+  opacity: 0.5;
   pointer-events: none;
   z-index: 0;
 }
 
 [data-theme="dark"] .hero::before {
-  opacity: 0.08;
+  --grid-color: var(--color-primary-500);
+  opacity: 0.2;
 }
 
 /* Floating rectangles animation */
