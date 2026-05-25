@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fitoji.dev.ar/sitemap.xml

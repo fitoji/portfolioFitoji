@@ -1,0 +1,6 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies (when using npx installs)
+node_modules/
