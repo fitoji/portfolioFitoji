@@ -338,11 +338,117 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
+/* Grid pattern overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--color-primary-400) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-primary-400) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="dark"] .hero::before {
+  opacity: 0.08;
+}
+
+/* Floating rectangles animation */
+@keyframes rectFloat {
+  0%, 100% { transform: translate(0, 0) rotate(var(--rot, 0deg)); }
+  33%  { transform: translate(var(--dx1, 8px), var(--dy1, -12px)) rotate(var(--rot, 0deg)); }
+  66%  { transform: translate(var(--dx2, -4px), var(--dy2, -20px)) rotate(var(--rot, 0deg)); }
+}
+
+.grid-rect {
+  position: absolute;
+  border: 1px solid var(--color-primary-400);
+  background: var(--color-primary-400);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  animation: rectFloat 20s ease-in-out infinite;
+}
+
+.grid-rect-1 {
+  --rot: 2deg;
+  --dx1: 12px; --dy1: -10px;
+  --dx2: -6px; --dy2: -18px;
+  width: 280px;
+  height: 100px;
+  top: 8%;
+  right: -3%;
+  opacity: 0.08;
+  animation-duration: 22s;
+  animation-delay: -2s;
+}
+
+.grid-rect-2 {
+  --rot: -3deg;
+  --dx1: -10px; --dy1: -15px;
+  --dx2: 8px; --dy2: -8px;
+  width: 140px;
+  height: 220px;
+  bottom: 12%;
+  left: -2%;
+  opacity: 0.06;
+  animation-duration: 26s;
+  animation-delay: -5s;
+}
+
+.grid-rect-3 {
+  --rot: 1deg;
+  --dx1: 6px; --dy1: -8px;
+  --dx2: -10px; --dy2: -14px;
+  width: 200px;
+  height: 140px;
+  top: 50%;
+  right: 5%;
+  opacity: 0.05;
+  animation-duration: 18s;
+  animation-delay: -9s;
+}
+
+.grid-rect-4 {
+  --rot: -1deg;
+  --dx1: -8px; --dy1: -18px;
+  --dx2: 14px; --dy2: -6px;
+  width: 340px;
+  height: 70px;
+  top: 75%;
+  left: 5%;
+  opacity: 0.07;
+  animation-duration: 24s;
+  animation-delay: -14s;
+}
+
+[data-theme="dark"] .grid-rect {
+  opacity: 0.1;
+  border-color: var(--color-primary-500);
+  background: var(--color-primary-500);
+}
+
+[data-theme="dark"] .grid-rect-1 { opacity: 0.12; }
+[data-theme="dark"] .grid-rect-2 { opacity: 0.09; }
+[data-theme="dark"] .grid-rect-3 { opacity: 0.08; }
+[data-theme="dark"] .grid-rect-4 { opacity: 0.1; }
+
+/* Hide rectangles on mobile */
+@media (max-width: 767px) {
+  .grid-rect { display: none; }
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-12);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text {
