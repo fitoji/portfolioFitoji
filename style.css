@@ -690,7 +690,9 @@ textarea:focus-visible {
 }
 
 .skill-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: var(--spacing-2) var(--spacing-4);
   background-color: var(--color-primary-50);
   color: var(--color-primary-600);
@@ -700,11 +702,43 @@ textarea:focus-visible {
   transition: var(--transition-base);
 }
 
+.skill-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.skill-tag.tech-javascript {
+  background-color: #f7df1e;
+  color: #111111;
+}
+
+.skill-tag.tech-react {
+  background-color: #d7f7ff;
+  color: #087ea4;
+}
+
+.skill-tag.tech-nextjs {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.skill-tag.tech-html {
+  background-color: #ffe1d8;
+  color: #9a3412;
+}
+
 .skill-tag:hover {
   background-color: var(--color-primary-600);
   color: white;
   transform: translateY(-5px);
 }
+
+.skill-tag.tech-javascript:hover { color: #111111; }
+.skill-tag.tech-react:hover { color: #087ea4; }
+.skill-tag.tech-nextjs:hover { color: #ffffff; }
+.skill-tag.tech-html:hover { color: #9a3412; }
 
 [data-theme="dark"] .skill-tag {
   background-color: var(--color-primary-900);
@@ -926,23 +960,36 @@ textarea:focus-visible {
 }
 
 .project-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.25rem 0.75rem;
   background-color: var(--color-gray-100);
   color: var(--text-secondary);
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-icon {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .project-card:hover .project-tag {
   background-color: var(--color-primary-100);
   color: var(--color-primary-700);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] .project-tag {
   background-color: var(--color-gray-800);
+  color: var(--text-secondary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .project-card:hover .project-tag {
@@ -1147,10 +1194,10 @@ textarea:focus-visible {
   }
 }
 
-/* Large screens: 4 projects in a row */
+/* Large screens: 3 projects in a row */
 @media (min-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
